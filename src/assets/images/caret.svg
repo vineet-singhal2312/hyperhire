@@ -1,0 +1,15 @@
+<svg
+                    width="10"
+                    height="10"
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 10 10"
+
+                  >
+                    <path
+                      d="M1 1 L5 5 L1 9"
+                      stroke="white"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                  </svg>
