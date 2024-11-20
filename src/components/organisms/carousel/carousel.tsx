@@ -63,7 +63,6 @@ const Carousel = ({
                   {isActive ? (
                     <Tooltip
                       position="center"
-                      textColor="#00C696"
                       content={tooltipItems.data}
                       iconSrc={tooltipItems.icon}
                     >

@@ -4,9 +4,6 @@ import { Category } from "@/types/hero";
 import Slider from "react-slick";
 
 function SlickSlider({ categories }: { categories: Category[] }) {
-  console.log(categories);
-  //   let sliderRef = useRef(null);
-
   const settings = {
     dots: true,
     infinite: true,

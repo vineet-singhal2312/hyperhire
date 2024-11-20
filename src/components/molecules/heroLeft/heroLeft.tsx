@@ -19,7 +19,7 @@ const HeroLeft = ({
 }: HeroLeftProps) => {
   return (
     <div className="flex flex-col md:w-[50%]">
-      <Tooltip textColor="#40E2E8" isTipLeft={true} content={heroTooltip}>
+      <Tooltip isTipLeft={true} content={heroTooltip}>
         <Heading
           text={title}
           level={1}

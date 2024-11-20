@@ -15,7 +15,6 @@ const Tooltip: React.FC<TooltipProps> = ({
   iconSrc,
   children,
   position = "left",
-  textColor = "#00C696",
   isTipLeft = false,
 }) => {
   const positionClass =
@@ -30,13 +29,13 @@ const Tooltip: React.FC<TooltipProps> = ({
       {children}
       <div
         className={`absolute w-auto ${
-          !isTipLeft && "px-4 py-2 -top-[5rem]"
+          !isTipLeft && "px-4 py-2 -top-[5rem] text-[#00C696]"
         }  h-auto group-hover:block text-lg bg-white font-black px-3 py-1 ${positionClass} -top-16 w-max rounded-md shadow-lg before:content-[''] before:w-4 before:h-4 before:rotate-45 before:bg-white before:absolute before:z-10 before:left-1/2 ${
           isTipLeft &&
-          "before:left-4 max-md:text-white max-md:bg-[#8BC4FF] max-md:before:bg-[#8BC4FF]"
+          "before:left-4 text-[#40E2E8] max-md:text-white max-md:bg-[#8BC4FF] max-md:before:bg-[#8BC4FF]"
         } before:-translate-x-1/4 before:-bottom-1`}
       >
-        <div className={`flex text-[${textColor}] items-center`}>
+        <div className={`flex items-center`}>
           {iconSrc && (
             <Image
               className="w-7 h-7 p-1 mr-3 rounded-full bg-green-200"
