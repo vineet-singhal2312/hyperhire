@@ -80,6 +80,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         { title: "퍼블리셔", icon: image },
         { title: "카드원(제도사)", icon: cube },
         { title: "해외 세일즈", icon: target },
+        { title: "해외 마케팅", icon: camera },
+        { title: "퍼블리셔", icon: image },
+        { title: "카드원(제도사)", icon: cube },
+        { title: "해외 세일즈", icon: target },
       ],
       tooltip: {
         data: "월 100만원",

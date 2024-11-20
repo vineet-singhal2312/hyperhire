@@ -7,9 +7,9 @@ import { HeaderDataType } from "@/types/header";
 
 export default function Header({ header }: { header: HeaderDataType }) {
   return (
-    <header className="z-30 mt-2 w-full md:mt-5">
+    <header className="z-30 mt-2 w-full md:mt-1">
       {header && (
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mx-auto">
           <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl">
             <div className="flex flex-1 items-center">
               <Logo logo={header.logo} />
@@ -24,7 +24,7 @@ export default function Header({ header }: { header: HeaderDataType }) {
             <ul className="hidden md:flex md:flex-1 items-center justify-end gap-3">
               <Button
                 label={header.button}
-                className="text-sm hover:text-blue-300"
+                className="font-black text-base hover:text-blue-300"
               />
             </ul>
           </div>

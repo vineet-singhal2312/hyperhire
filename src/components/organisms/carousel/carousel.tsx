@@ -4,7 +4,7 @@ import Tooltip from "../tooltip/tooltip";
 import { Profile, Tooltip as TooltipProps } from "@/types/hero";
 
 const Carousel = ({
-  profiles,
+  profiles = [],
   tooltipItems,
 }: {
   profiles: Profile[];
@@ -25,16 +25,16 @@ const Carousel = ({
   };
 
   return (
-    <div className="flex items-center py-4 md:py-0">
-      <div className="md:relative flex items-center  w-[300px] md:w-[530px] justify-center h-80">
+    <div className="flex items-center rounded-xl -mt-24 m py-4 max-md:pb-0 max-md:mt-6 md:py-0 w-[100%]">
+      <div className="md:relative flex items-center w-[100%] justify-center h-[36rem] max-md:h-[26rem]">
         <button
           onClick={prevSlide}
-          className="absolute left-0 z-40 p-2 text-white rounded-full animate-fadeIn"
+          className="absolute text-4xl lg:left-3 md:left-0 max-md:left-1 z-40 p-2 text-white rounded-full animate-fadeIn"
         >
           &#10094;
         </button>
 
-        <div className="relative flex items-center justify-center w-full">
+        <div className="flex items-center justify-center w-full">
           {profiles.map((profile: Profile, index: number) => {
             const isActive = index === currentIndex;
             const isLeft =
@@ -48,10 +48,10 @@ const Carousel = ({
                 "z-20 scale-100 opacity-100 transform translate-x-0";
             } else if (isLeft) {
               positionClasses =
-                "z-10 scale-90 opacity-75 transform -translate-x-[25%] md:-translate-x-[60%]";
+                "z-10 scale-90 opacity-85 transform lg:-translate-x-[33%] xl:-translate-x-[45%] md:-translate-x-[25%] max-md:-translate-x-[20%]";
             } else if (isRight) {
               positionClasses =
-                "z-10 scale-90 opacity-75 transform translate-x-[25%] md:translate-x-[60%]";
+                "z-10 scale-90 opacity-85 transform lg:translate-x-[33%] xl:translate-x-[45%] md:translate-x-[25%] max-md:translate-x-[20%]";
             }
 
             return (
@@ -63,6 +63,7 @@ const Carousel = ({
                   {isActive ? (
                     <Tooltip
                       position="center"
+                      textColor="#00C696"
                       content={tooltipItems.data}
                       iconSrc={tooltipItems.icon}
                     >
@@ -79,7 +80,7 @@ const Carousel = ({
 
         <button
           onClick={nextSlide}
-          className="absolute right-0 z-40 p-2 text-white rounded-full animate-fadeIn"
+          className="absolute text-4xl lg:right-3 md:right-0 max-md:right-1 z-40 p-2 text-white rounded-full animate-fadeIn"
         >
           &#10095;
         </button>

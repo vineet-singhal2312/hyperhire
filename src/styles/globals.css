@@ -15,7 +15,12 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-
+.slick-track {
+  height: 3rem;
+}
+.slick-slide {
+  margin: 0rem 0.5rem;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

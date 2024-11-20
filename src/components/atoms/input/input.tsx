@@ -24,7 +24,7 @@ const CheckboxField: FC<CheckboxFieldProps> = ({
         onChange={onChange}
         className={`h-4 w-4 accent-white rounded-sm ${className}`}
       />
-      <label htmlFor={id} className="text-white font-bold">
+      <label htmlFor={id} className="text-white font-black max-md:text-base">
         {label}
       </label>
     </div>

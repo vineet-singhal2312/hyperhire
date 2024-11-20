@@ -18,25 +18,25 @@ const HeroLeft = ({
   heroTooltip,
 }: HeroLeftProps) => {
   return (
-    <div className="flex flex-col">
-      <Tooltip content={heroTooltip}>
+    <div className="flex flex-col md:w-[50%]">
+      <Tooltip textColor="#40E2E8" isTipLeft={true} content={heroTooltip}>
         <Heading
           text={title}
           level={1}
-          className="text-3xl leading-1 text-white pb-4 font-poppins font-extrabold lg:text-4xl lg:leading-[48px] text-left underline decoration-transparent animate-fadeIn delay-300"
+          className="text-5xl max-md:text-4xl mb-1 leading-1 text-white pb-4 leading-[62px] underline decoration-transparent animate-fadeIn delay-300"
         />
       </Tooltip>
 
       <Heading
         text={subtitle}
         level={2}
-        className="text-lg font-lighter leading-1 text-white pb-4 font-poppins lg:font-extrabold lg:text-3xl lg:leading-[48px] text-left underline decoration-transparent animate-fadeIn delay-500"
+        className="max-md:text-lg text-2xl mb-2.5 font-lighter leading-[34px] text-white pb-4 underline decoration-transparent animate-fadeIn delay-500"
       />
 
       <Heading
         text={highlight}
         level={3}
-        className="hidden lg:flex text-white pb-4 font-poppins font-extrabold text-2xl leading-[48px] text-left underline animate-fadeIn delay-500"
+        className="hidden mb-12 lg:flex text-white pb-4 text-lg leading-[27px] text-left underline animate-fadeIn delay-500"
       />
 
       <FeatureList features={features} />

@@ -12,11 +12,8 @@ export const LegalItem = ({
   className?: string;
 }) => (
   <div className={`${className}`}>
-    <Heading
-      text={title}
-      className="text-sm text-slate-800 font-semibold mb-2"
-    />
-    <ul className="text-sm font-medium space-y-2">
+    <Heading text={title} className="text-sm text-slate-800 font-black mb-2" />
+    <ul className="text-sm font-black space-y-2">
       {links.map((link, index) => (
         <li key={index}>
           <FooterLink href="#">{link}</FooterLink>

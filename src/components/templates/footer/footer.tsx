@@ -10,8 +10,8 @@ export default function Footer({ footer }: { footer: FooterDataTypes }) {
   return (
     <footer>
       {footer && (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid sm:grid-cols-6 lg:grid-cols-12 gap-8 py-8 md:py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 font-black">
+          <div className="grid sm:grid-cols-6 lg:grid-cols-12 gap-12 py-8 md:py-12">
             <ContactInfo {...footer.companyInfo} />
 
             <FooterFeatures features={footer.features} />
@@ -20,7 +20,7 @@ export default function Footer({ footer }: { footer: FooterDataTypes }) {
           <div className="md:flex md:items-center md:justify-between py-6 md:py-8">
             <Text
               content={footer.footerNote}
-              className="text-sm text-slate-900 font-bold mr-4"
+              className="text-sm text-slate-900 mr-4 font-black"
             />
           </div>
         </div>

@@ -5,6 +5,9 @@ import { HeroData } from "@/types/hero";
 import { FooterDataTypes } from "@/types/footer";
 import { HeaderDataType } from "@/types/header";
 import Hero from "../components/templates/hero/hero";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SlickSlider from "@/components/organisms/slider/Slider";
 
 // Load the custom fonts
 const geistSans = localFont({
@@ -28,7 +31,7 @@ export default function Home({ heroData, footerData, headerData }: Props) {
   return (
     <div className={`${geistSans.variable} ${geistMono.variable}`}>
       <div className="bg-gradient-to-r from-teal-400 to-blue-500 flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
-        <div className="px-4 w-full">
+        <div className="px-6 w-full">
           {headerData && <Header header={headerData} />}
           {heroData && <Hero heroData={heroData} />}
         </div>

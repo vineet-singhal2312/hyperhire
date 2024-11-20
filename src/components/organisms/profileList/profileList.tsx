@@ -13,7 +13,7 @@ interface ProfileListProps {
   }[];
 }
 
-const ProfileList: React.FC<ProfileListProps> = ({ profiles }) => (
+const ProfileList: React.FC<ProfileListProps> = ({ profiles = [] }) => (
   <div className="grid gap-4 items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
     {profiles.map((profile, index) => (
       <ProfileCard key={index} {...profile} />

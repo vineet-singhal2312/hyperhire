@@ -8,10 +8,10 @@ const ContactInfo = ({ logo, tagline, phone, email }: CompanyInfoTypes) => (
     <div className="mb-2">
       <FooterLogo src={logo} />
     </div>
-    <Text content={tagline} className="text-sm font-bold text-slate-800" />
+    <Text content={tagline} className="text-sm text-slate-800" />
 
-    <Text content={phone} className="text-xs mt-2 font-bold text-slate-800" />
-    <Text content={email} className="text-xs mt-2 font-bold text-slate-800" />
+    <Text content={phone} className="text-xs mt-2 text-slate-800" />
+    <Text content={email} className="text-xs mt-2 text-slate-800" />
   </div>
 );
 

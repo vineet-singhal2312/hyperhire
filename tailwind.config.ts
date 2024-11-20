@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width: {
+        "150": "150px",
+        "45%": "45%",
+        "55%": "55%",
+      },
+      margin: {
+        "164px": "164px",
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0", transform: "translateY(20px)" },
@@ -31,6 +39,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        text: {
+          pBlue: "#40E2E8",
+          200: "#4A77FF",
+        },
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

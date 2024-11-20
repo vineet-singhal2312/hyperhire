@@ -11,7 +11,7 @@ type NavigationProps = {
   links: NavLinkType[];
 };
 
-const Navigation = ({ links }: NavigationProps) => (
+const Navigation = ({ links = [] }: NavigationProps) => (
   <nav className="flex items-center space-x-6">
     {links.map((link, index) => (
       <NavLink
