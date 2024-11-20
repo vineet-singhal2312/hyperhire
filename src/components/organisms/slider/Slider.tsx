@@ -1,7 +1,6 @@
 import Image from "@/components/atoms/image/image";
 import { Text } from "@/components/atoms/text/text";
 import { Category } from "@/types/hero";
-import React, { useRef } from "react";
 import Slider from "react-slick";
 
 function SlickSlider({ categories }: { categories: Category[] }) {

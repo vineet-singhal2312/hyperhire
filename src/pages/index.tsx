@@ -7,7 +7,6 @@ import { HeaderDataType } from "@/types/header";
 import Hero from "../components/templates/hero/hero";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SlickSlider from "@/components/organisms/slider/Slider";
 
 // Load the custom fonts
 const geistSans = localFont({

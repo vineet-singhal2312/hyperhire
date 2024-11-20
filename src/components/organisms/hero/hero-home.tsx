@@ -1,11 +1,9 @@
-import Image from "../../atoms/image/image";
 import Heading from "../../atoms/heading/heading";
 import Carousel from "../carousel/carousel";
 import CheckboxField from "../../atoms/input/input";
 import { useState } from "react";
 import { Category, HeroData } from "@/types/hero";
 import HeroLeft from "../../molecules/heroLeft/heroLeft";
-import { Text } from "../../atoms/text/text";
 import SlickSlider from "../slider/Slider";
 
 export default function HeroHome({
